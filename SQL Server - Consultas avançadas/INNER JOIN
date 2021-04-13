@@ -1,0 +1,13 @@
+--Exemplo sem o uso de alias 
+SELECT * FROM [TABELA DE VENDEDORES]
+INNER JOIN [NOTAS FISCAIS]
+ON dbo.[NOTAS FISCAIS].MATRICULA = dbo.[TABELA DE VENDEDORES].MATRICULA
+
+
+--Exemplo usando um alias
+SELECT * FROM [TABELA DE VENDEDORES] V
+INNER JOIN [NOTAS FISCAIS] N
+ON V.MATRICULA = N.MATRICULA
+
+--Qual é o número de notas fiscais por vendedor?
+SELECT 
